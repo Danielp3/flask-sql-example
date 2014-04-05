@@ -19,6 +19,8 @@
 -- Table structure for table `email`
 --
 
+CREATE DATABASE people;
+
 DROP TABLE IF EXISTS `email`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -75,3 +77,6 @@ CREATE TABLE `phone` (
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2014-04-05 17:53:14
+
+CREATE USER 'people'@'localhost' identified by 'people';
+grant all on people.* to 'people'@'localhost';
