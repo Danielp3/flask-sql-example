@@ -3,4 +3,10 @@
 
 {% block body %}
 <p>The Front Page</p>
+
+<ul>
+{% for id, firstname, lastname, nickname in people %}
+    <li>{{lastname}}, {{firstname}}</li>
+{% endfor %}
+</ul>
 {% endblock %}
